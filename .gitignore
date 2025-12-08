@@ -6,21 +6,68 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
+ENV/
 *.egg-info/
 dist/
 build/
+eggs/
+*.egg
+.eggs/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
 
-# PyCharm
+# IDEs
 .idea/
+*.iml
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# MyPy
+.mypy_cache/
 
 # Data & Models
 *.pth
 *.pkl
+*.h5
+*.onnx
 data/raw/
 data/processed/
+data/cifar10/
 saved_models/*.pth
+checkpoints/
+
+# Logs
+logs/
+*.log
+tensorboard/
+runs/
 
 # OS
 .DS_Store
 Thumbs.db
 *.swp
+*.swo
+*~
+
+# Temp
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache

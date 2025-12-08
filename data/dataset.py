@@ -52,7 +52,7 @@ class CIFAR10Dataset:
             transform = transforms.ToTensor()
 
         return datasets.CIFAR10(
-            root=self.data_dir, train=True, download=True, transform=transform
+            root=self.data_dir, train=False, download=True, transform=transform
         )
 
     def get_class_name(self, class_idx):
